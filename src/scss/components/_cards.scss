@@ -1,0 +1,30 @@
+.cardproject {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.cardproject__date {
+  display: inline-block;
+  font-size: var(--font-size-small);
+  color: var(--color-grey-500);
+}
+
+.cardtech {
+  display: flex;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.cardtech__image {
+  height: 4rem;
+  width: 4rem;
+}
+
+.cardtech__title {
+  font-size: var(--font-size-normal);
+  font-weight: 600;
+  color: var(--color-grey-800);
+}

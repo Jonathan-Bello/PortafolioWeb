@@ -1,0 +1,45 @@
+.footer {
+  margin-top: 4em;
+  background-color: var(--color-grey-100);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer__content {
+  row-gap: 2em;
+
+  @include from(lg) {
+    row-gap: 6em;
+  }
+}
+
+.footer__social svg {
+  width: 2rem;
+  height: 2rem;
+
+  &:hover {
+    path {
+      fill: var(--color-primary-300);
+    }
+  }
+}
+
+.footer__contact__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+
+  @include from(lg) {
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+.footer__contact__title {
+  font-weight: 600;
+  font-size: 1em;
+  font-family: "Manrope", sans-serif;
+  margin-right: 1rem;
+}

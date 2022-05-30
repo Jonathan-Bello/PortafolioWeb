@@ -1,0 +1,15 @@
+.skillcard__iconcontainer {
+  background-color: var(--color-primary-100);
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: .5rem;
+}
+
+.skillcard__icon {
+  width: 2rem;
+  stroke: var(--color-primary-900);
+}
+
+.skillcard__title {
+  color: var(--color-grey-700);
+}

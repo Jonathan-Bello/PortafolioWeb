@@ -1,0 +1,52 @@
+// Posicionamiento del header
+.ed-header {
+  position : fixed;
+  top      : 0;
+  width    : 100%;
+  z-index  : var(--z-front);
+  background-color: var(--color-grey-100);
+
+  .logo { height : 2rem }
+
+  // Posicionamiento del nav
+  // Utilizamos el mixin to() de EDgrid para que sólo se aplique en móvil
+  .nav {
+      @include to(lg) {
+        position : fixed;
+        left     : 0;
+        bottom   : 0;
+        background : var(--color-grey-100);
+        height: 4rem;
+      }
+  }
+
+  .menu { list-style : none }
+
+  // Colores de links del menú
+  .link {
+    color : var(--color-grey-500);
+    font-weight: 600;
+    font-size: var(--font-size-small);
+    &.active {
+      color : var(--color-grey-800);
+    }
+
+    @include from(lg) {
+      color : --color-grey-800;
+      border-top: 0.2rem solid transparent;
+      padding-top: 0.25rem;
+
+      &.active {
+        border-top: 0.2rem solid var(--color-primary-500);
+      }
+    }
+  }
+
+   // Estilos para los íconos
+  .icon {
+    --size : 1.5rem;
+    width  : var(--size);
+    height : var(--size);
+    // fill   : currentColor;
+  }
+}

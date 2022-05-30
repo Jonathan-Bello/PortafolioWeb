@@ -1,0 +1,31 @@
+.rowtools {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.rowtools__item {
+  width: 3rem;
+  height: 3rem;
+  background-size: cover;
+  border-radius: 0.5em;
+  // &.figma {
+  //   background-image: url(../../../public/assets/svg/techs/Figma.svg);
+  // }
+  // &.react {
+  //   background-image: url(../../../public/assets/svg/techs/React.svg);
+  // }
+  // &.sass {
+  //   background-image: url(../../../public/assets/svg/techs/Sass.svg);
+  // }
+  // &.typescript {
+  //   background-image: url(../../../public/assets/svg/techs/Typescript.svg);
+  // }
+  // &.golang {
+  //   background-image: url(../../../public/assets/svg/techs/golang-gopher.svg);
+  // }
+  // &.flutter {
+  //   background-image: url(../../../public/assets/svg/techs/Flutter.svg);
+  // }
+}

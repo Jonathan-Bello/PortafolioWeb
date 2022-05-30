@@ -1,0 +1,7 @@
+.primaryskills__title {
+  margin-bottom: 1rem;
+
+  @include from(lg) {
+    margin-bottom: 3rem;
+  }
+}

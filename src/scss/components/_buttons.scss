@@ -1,0 +1,59 @@
+$buttonsValues : (
+  primary : var(--color-primary),
+  light : var(--color-primary-300),
+  disable : var(--color-grey-300),
+  gosht : transparent
+);
+
+
+.button {
+  @include button(var(--color-primary));
+
+  &:hover {
+    background-color: var(--color-primary-600);
+    color: var(--color-grey-100);
+  }
+}
+
+.button--white {
+  @include button(var(--color-grey-100));
+  color: var(--color-primary-600);
+
+  &:hover {
+    background-color: var(--color-grey-200);
+    color: var(--color-primary-600);
+  }
+}
+
+.button--link {
+  @include button(transparent);
+  color: var(--color-grey-200);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--color-grey-100);
+  }
+}
+
+.button--light {
+  @include button(var(--color-primary-300));
+}
+
+.button--disabled {
+  @include button(var(--color-grey-300));
+  &:hover {
+    background-color: var(--color-grey-400);
+  }
+}
+
+.button--ghost {
+  @include button(transparent);
+  box-sizing: border-box;
+  outline: 2px solid var(--color-grey-100);
+  outline-offset: -2px;
+
+  &:hover {
+    background-color: var(--color-grey-100);
+    color: var(--color-grey-600);
+  }
+}

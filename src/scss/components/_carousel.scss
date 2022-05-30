@@ -1,0 +1,61 @@
+.carouselBP {
+  background-color: var(--color-grey-100);
+  padding: 6em 0;
+}
+
+/* --- --- carouselBP --- --- */
+.carouselBP__back,
+.carouselBP__next {
+  // position: absolute;
+  display: block;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  top: (calc(50% - 2.5em));
+  color: var(--color-grey-500);
+  background-color: var(--color-grey-100);
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px -1px rgba(46, 45, 45, 0.3),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.carouselBP__back {
+  left: -1em;
+}
+.carouselBP__next {
+  right: -1em;
+}
+
+.carouselBP__back:hover,
+.carouselBP__next:hover {
+  color: var(--color-primary-400);
+}
+
+/* Quitar el  scroll predeterminado del navegador*/
+.carouselBP__list {
+  overflow: hidden;
+}
+
+.carouselBP__item {
+  display: block;
+}
+
+/* Para los indicadores de en que página estamos */
+.carouselBP__dots .glider-dot {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: var(--color-icon);
+  opacity: 0.2;
+}
+
+.carouselBP__dots .glider-dot:hover {
+  opacity: 0.5;
+}
+
+.carouselBP__dots .glider-dot.active {
+  opacity: 1;
+}

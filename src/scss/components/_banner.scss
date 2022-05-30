@@ -1,0 +1,50 @@
+.banner {
+  background-image: url(../../assets/svg/BannerBG.svg);
+  background-size: cover;
+  border-bottom: 2px solid var(--color-primary-400);
+  @include from(lg) {
+    padding: 6em 0;
+  }
+}
+
+.banner__title {
+  color: var(--color-grey-100);
+}
+
+.banner__content {
+  --gap: 2em;
+
+  @include from(lg) {
+    --gap: 8em;
+  }
+}
+
+.banner__img {
+  max-width: 32em;
+}
+
+// Banner simple
+
+.bannersimple__content {
+  background-image: url(../../assets/svg/BannerBG.svg);
+  background-size: cover;
+  border-radius: 0.5em;
+  padding: 4em 0;
+}
+
+.bannersimple__title {
+  color: var(--color-grey-100);
+}
+
+// Banner Last Project
+
+.bannerLP {
+  background-color: var(--color-grey-100);
+}
+
+.bannerLP__LPtext {
+  font-weight: 500;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 180%;
+}

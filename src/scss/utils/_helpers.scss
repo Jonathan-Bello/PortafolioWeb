@@ -1,0 +1,24 @@
+// Class & placeholders helpers
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.block-ellipsis {
+  display: -webkit-box;
+  /* Numero de lineas que deseas que se visualicen */
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.block-ellipsis-2 {
+  display: -webkit-box;
+  /* Numero de lineas que deseas que se visualicen */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

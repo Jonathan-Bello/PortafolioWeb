@@ -1,0 +1,53 @@
+.main h1 {
+  padding-top: var(--block-spacing);
+  margin-bottom: var(--block-spacing);
+}
+
+/* Para delimitar el contenido, y no toque los bordes de la pantalla */
+.content-wrapper {
+  width: calc(100% - 2rem);
+  /* Definimos el maximo del ancho */
+  max-width: var(--max-width);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Content wrapper para computadora */
+@media screen and (min-width: 1024px) {
+  .content-wrapper {
+    width: 100%;
+    max-width: var(--max-width);
+    /* Para centrarlo, el margin left & right */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Ponemos la separación entre las secciones */
+.section-container {
+  margin-bottom: var(--section-spacing);
+}
+
+/* Centramos el h1 y h2 */
+.section-container h1,
+.section-container h2 {
+  text-align: center;
+}
+
+.icon path[fill="black"] {
+  fill: var(--color-icon);
+}
+
+.icon-link:hover > path,
+.icon-link:hover path {
+  fill: var(--color-primary);
+}
+
+form {
+  margin-bottom: 0;
+}
+
+.divitions-line{
+  border: 1px solid var(--color-bg-light);
+  background-color: var(--color-bg-light);
+}
