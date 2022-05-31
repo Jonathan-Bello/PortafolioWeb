@@ -19,23 +19,23 @@ const Projects = () => {
     <>
       <NavBar />
       <BannerLastProject />
-      <BannerSimple />
+      {/* <BannerSimple /> */}
 
       {/* Projectos */}
-      <section className="ed-grid s-grid-1 m-grid-2 lg-grid-3">
-        {projects.map((project) => (
-          <CardProject key={project.id} {...project} />
-        ))}
-      </section>
+      {(projects && (
+        <section className="ed-grid s-grid-1 m-grid-2 lg-grid-3 s-pt-4">
+          {projects.map((project) => (
+            <CardProject key={project.id} {...project} />
+          ))}
+        </section>
+      )) || (
+        <div className="s-center">
+          <h1>Loading...</h1>
+        </div>
+      )}
 
       {/* Logros */}
       <BannerSimple />
-      {/* <section className="ed-grid s-grid-1 m-grid-2 lg-grid-3">
-        <CardProject />
-        <CardProject />
-        <CardProject />
-        <CardProject />
-      </section> */}
       <Footer />
     </>
   );
