@@ -1,4 +1,4 @@
-import Button from "../Buttons/Button";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -7,13 +7,20 @@ const Banner = () => {
       <div className="ed-grid lg-grid-2 row-gap banner__content">
         {/* <!-- Contenido de la columna 1 --> */}
         <div className="s-column s-main-center lg-main-center lg-cross-start s-center lg-left">
-          <h1 className="banner__title">Soy Jonathan el chido del lugar</h1>
+          <h1 className="banner__title">
+            ¡Hola! <br /> Soy Jonathan Bello, Desarrollador Web
+          </h1>
           {/* <!-- Botones --> */}
           <div className="s-main-center">
-            <a className="button--white s-mr-2 m-mb-0" href="/">
+            <Link className="button--white s-mr-2 m-mb-0" to="/Projects">
               Mira mis proyectos
+            </Link>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.fenix.artesanos_a_la_mano"
+              className={"button--link"}
+            >
+              Ver mi ultimo proyecto{""}
             </a>
-            <Button text="Ver mi ultimo proyecto" btnType={"button--link"} />
           </div>
         </div>
 
@@ -22,7 +29,7 @@ const Banner = () => {
           <div className="img-container s-ratio-16-9">
             <img
               className="s-radius-1"
-              src="./assets/img/portada.png"
+              src="https://res.cloudinary.com/fenixgames/image/upload/v1653971421/PortafolioWeb/mdohdpmpsk4n3vg0teab.jpg"
               alt="last project"
             />
           </div>

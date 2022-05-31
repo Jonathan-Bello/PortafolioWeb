@@ -1,4 +1,5 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,23 +14,23 @@ const Footer = () => {
         <div className="footer__menu lg-x-10 lg-cols-3">
           <ul className="ed-grid s-grid-2 s-pl-0">
             <li className="s-mb-2 s-center">
-              <a href="/">Inicio</a>
+              <Link to="/">Inicio</Link>
             </li>
             <li className="s-mb-2 s-center">
-              <a href="/">Acerca de</a>
+              <Link to="/projects">Acerca de</Link>
             </li>
             <li className="s-mb-2 s-center">
-              <a href="/">Contacto</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li className="s-mb-2 s-center">
-              <a href="/">Contacto</a>
+              <a href="/aboutme">Contacto</a>
             </li>
           </ul>
         </div>
         <div className="footer__social lg-cols-3">
           <ul className="s-pl-0 ed-grid s-grid-5 lg-grid-5 s-center">
             <li>
-              <a href="https://www.facebook.com/juan.jose.gonzalez.9">
+              <a href="https://www.linkedin.com/in/jonathan-alexis-bello-l%C3%B3pez-a4b3391b9/">
                 <svg
                   width="24"
                   height="24"
@@ -45,7 +46,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/juanjosegonzalez/">
+              <a href="https://github.com/Jonathan-Bello">
                 <svg
                   width="24"
                   height="24"
@@ -61,7 +62,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/juan-jose-gonzalez-a8a8b5a4/">
+              <a href="https://www.instagram.com/jonathanbe110/">
                 <svg
                   width="24"
                   height="24"
@@ -77,7 +78,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/juan-jose-gonzalez-a8a8b5a4/">
+              <a href="https://www.facebook.com/JonathanBe110">
                 <svg
                   width="24"
                   height="24"
@@ -95,7 +96,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/juan-jose-gonzalez-a8a8b5a4/">
+              <a href="https://twitter.com/Jonathan_Be110">
                 <svg
                   width="24"
                   height="19"
@@ -117,12 +118,14 @@ const Footer = () => {
           <h4 className="footer__contact__title">Contactame por aquí</h4>
           <div className="footer__contact__item">
             <PhoneIcon width={24} className="s-mr-2" />
-            <span>+57 300 890 1234</span>
+            <span>+52 231 325 3031</span>
           </div>
           <div className="footer__contact__item">
             <MailIcon width={24} className="s-mr-2" />
             <span>
-              <a href="mailto:jonathan.bellofg@gmail.com"> nsndjk@email.com </a>
+              <a href="mailto:jonathan.bellofg@gmail.com">
+                jonathan.bellofg@gmail.com
+              </a>
             </span>
           </div>
         </div>

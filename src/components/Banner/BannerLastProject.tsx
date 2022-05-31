@@ -14,7 +14,10 @@ const BannerLastProject = () => {
           </p>
           {/* <!-- Botones --> */}
           <div className="s-main-center">
-            <a className="button small s-mr-2 m-mb-0" href="/">
+            <a
+              className="button small s-mr-2 m-mb-0"
+              href="https://play.google.com/store/apps/details?id=com.fenix.artesanos_a_la_mano"
+            >
               Ver proyecto
             </a>
           </div>
@@ -25,7 +28,7 @@ const BannerLastProject = () => {
           <div className="img-container s-ratio-16-9">
             <img
               className="s-radius-1"
-              src="./assets/img/portada.png"
+              src="https://res.cloudinary.com/fenixgames/image/upload/v1653971421/PortafolioWeb/mdohdpmpsk4n3vg0teab.jpg"
               alt="last project"
             />
           </div>

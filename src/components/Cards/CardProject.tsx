@@ -9,11 +9,13 @@ const CardProject = (props: Blog) => {
       </div>
 
       <div className="cardproject__data s-pxy-2">
-        <span className="cardproject__date s-mb-1">
+        {/* <span className="cardproject__date s-mb-1">
           {Date.parse(props.updated_at)
             ? new Date(props.updated_at).toLocaleDateString()
             : ""}
-        </span>
+        </span> */}
+        <span className="cardproject__date s-mb-1">{props.tag.name}</span>
+
         <h3 className="cardproject__title s-mb-1">{props.title}</h3>
         <p>{props.description}</p>
         <a href={props.url} className="button s-mb-4">
