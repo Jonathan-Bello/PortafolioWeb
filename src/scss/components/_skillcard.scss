@@ -2,7 +2,7 @@
   background-color: var(--color-primary-100);
   width: 3.5em;
   height: 3.5em;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .skillcard__icon {
@@ -12,4 +12,8 @@
 
 .skillcard__title {
   color: var(--color-grey-700);
+}
+
+.skillcard__description {
+  line-height: 160%;
 }

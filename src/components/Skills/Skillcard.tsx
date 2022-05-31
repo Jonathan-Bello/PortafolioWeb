@@ -1,22 +1,31 @@
-import { ColorSwatchIcon } from "@heroicons/react/outline";
+import { CodeIcon, ColorSwatchIcon, UserGroupIcon } from "@heroicons/react/outline";
 
-const Skillcard = () => {
+const Skillcard = (props: ISkillCard) => {
   return (
     <article className="skillcard">
       <div className="s-main-center s-mb-1 lg-mb-2">
         <span className="skillcard__iconcontainer s-main-center s-cross-center">
-          <ColorSwatchIcon className="skillcard__icon" />
+          {props.icon === "web" && <CodeIcon className="skillcard__icon" />}
+          {props.icon === "design" && (
+            <ColorSwatchIcon className="skillcard__icon" />
+          )}
+          {props.icon === "other" && (
+            <UserGroupIcon className="skillcard__icon" />
+          )}
         </span>
       </div>
-      <h3 className="skillcard__title s-center s-mb-05 lg-mb-1">Skillcard</h3>
-      <p className="skillcard__description s-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum non
-        in illo fugit cumque eum quidem doloribus, modi ipsa consequuntur
-        necessitatibus reprehenderit tempore ex dolor incidunt culpa eaque
-        molestiae voluptas.
-      </p>
+      <h3 className="skillcard__title s-center s-mb-05 lg-mb-1">
+        {props.title}
+      </h3>
+      <p className="skillcard__description s-center">{props.description}</p>
     </article>
   );
 };
 
 export default Skillcard;
+
+interface ISkillCard {
+  title: string;
+  description: string;
+  icon: string;
+}
