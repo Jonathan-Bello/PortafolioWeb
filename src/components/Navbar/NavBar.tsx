@@ -2,7 +2,7 @@ import {
   BookmarkAltIcon,
   CollectionIcon,
   HomeIcon,
-  SearchIcon,
+  UserCircleIcon,
 } from "@heroicons/react/outline";
 import { NavLink } from "react-router-dom";
 import Button from "../Buttons/Button";
@@ -25,7 +25,7 @@ const NavBar = () => {
               <li className="lg-mr-3">
                 <NavLink className="link s-column s-cross-center" to="/">
                   {/* <!--  El ícono sólo se mostrará en la versión móvil  --> */}
-                  <HomeIcon className="icon to-lg s-mb-0" />
+                  <HomeIcon className="icon to-lg s-mb-05 lg-mb-0" />
                   <span>Inicio</span>
                 </NavLink>
               </li>
@@ -34,20 +34,20 @@ const NavBar = () => {
                   className="link s-column s-cross-center"
                   to="/projects"
                 >
-                  <CollectionIcon className="icon to-lg s-mb-0" />
+                  <CollectionIcon className="icon to-lg s-mb-05 lg-mb-0" />
                   <span>Proyectos</span>
                 </NavLink>
               </li>
               <li className="lg-mr-3">
                 <NavLink className="link s-column s-cross-center" to="/blog">
-                  <BookmarkAltIcon className="icon to-lg s-mb-0" />
+                  <BookmarkAltIcon className="icon to-lg s-mb-05 lg-mb-0" />
                   <span>Blog</span>
                 </NavLink>
               </li>
               <li className="lg-mr-3">
                 <NavLink className="link s-column s-cross-center" to="/aboutMe">
-                  <SearchIcon className="icon to-lg s-mb-0" />
-                  <span>Acerca de mi</span>
+                  <UserCircleIcon className="icon to-lg s-mb-05 lg-mb-0" />
+                  <span>Acerca de mí</span>
                 </NavLink>
               </li>
             </ul>
